@@ -1,7 +1,7 @@
 # VagrantLaravelBox
 Vagrant script for an Ubuntu 18.04 (LTS) box with Laravel  
 webserver-port: 8080  
-webroot: /vagrant (default synched directory)
+webroot: /vagrant (default synched directory)  
 SSH-port: 2222  
 mysql: root / root
 
