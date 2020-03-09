@@ -40,4 +40,4 @@ sudo apt-get install composer -y
 sudo composer global require "laravel/installer"
 sudo ln -s ~/.composer/vendor/bin/laravel /usr/bin/laravel
 
-sudo apt-get update && sudo apt-get upgrade -y
+sudo apt-get update && sudo apt-get --with-new-pkgs upgrade -y
