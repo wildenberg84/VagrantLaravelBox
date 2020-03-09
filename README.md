@@ -1,5 +1,6 @@
 # VagrantLaravelBox
-Vagrant script for an Ubuntu 18.04 (LTS) box with Laravel
+Vagrant script for an Ubuntu 18.04 (LTS) box with Laravel  
+webserver-port: 8080 & SSH-port: 2222
 
 # Usage (on Ubuntu 18.04)
 1. Install composer  
