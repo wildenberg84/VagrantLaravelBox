@@ -1,9 +1,9 @@
-# VagrantLaravelBox
+# VagrantLaravelBox (dev)
 Vagrant script for an Ubuntu 18.04 (LTS) box with Laravel  
 webserver-port: 8080  
 webroot: /vagrant (default synched directory)  
 SSH-port: 2222  
-mysql: root / root
+mysql: root / root  
 
 # Usage (on Ubuntu 18.04)
 1. Install composer  
@@ -22,7 +22,7 @@ git clone https://github.com/wildenberg84/VagrantLaravelBox.git vm-name
 cd vm-name  
 vagrant up
 
-Optional:  
+# Optional:  
 6. Setup SSH  
   -copy id_rsa.pub (default location ~/.ssh/) from host to synced vagrant folder  
   -login to VM (vagrant ssh)  
