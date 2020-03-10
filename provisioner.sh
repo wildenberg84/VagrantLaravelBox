@@ -3,9 +3,9 @@
 sudo apt-get install software-properties-common -y
 sudo add-apt-repository ppa:ondrej/php -y
 sudo apt-get update
-sudo apt-get install php7.0 php7.0-fpm php7.0-mysql php7.0-zip -y
+sudo apt-get install php7.4 php7.4-fpm php7.4-mysql php7.4-zip php7.4-mbstring php7.4-dom -y
 sudo apt-get --purge autoremove -y
-sudo service php7.0-fpm restart
+sudo service php7.4-fpm restart
 
 sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password root'
 sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password root'
@@ -40,4 +40,4 @@ sudo apt-get install composer -y
 sudo -Hu vagrant composer global require "laravel/installer" && su - vagrant -c "echo \"PATH='~/.composer/vendor/bin:$PATH'\" >> /home/vagrant/.profile" && su - vagrant -c ". ~/.profile"
 
 sudo apt-get update && sudo apt-get --with-new-pkgs upgrade -y
-sudo apt autoremove -y
+sudo apt-get autoremove -y
