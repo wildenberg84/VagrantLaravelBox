@@ -37,7 +37,7 @@ EOM
 sudo service nginx restart
 
 sudo apt-get install composer -y
-sudo composer global require "laravel/installer"
-sudo ln -s ~/.composer/vendor/bin/laravel /usr/bin/laravel
+sudo -Hu vagrant composer global require "laravel/installer" && su - vagrant -c "echo \"PATH='~/.composer/vendor/bin:$PATH'\" >> /home/vagrant/.profile" && su - vagrant -c ". ~/.profile"
 
 sudo apt-get update && sudo apt-get --with-new-pkgs upgrade -y
+sudo apt autoremove -y
