@@ -41,3 +41,5 @@ sudo -Hu vagrant composer global require "laravel/installer" && su - vagrant -c 
 
 sudo apt-get update && sudo apt-get --with-new-pkgs upgrade -y
 sudo apt-get autoremove -y
+
+sudo sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config && sudo service ssh restart
