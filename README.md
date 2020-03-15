@@ -1,10 +1,11 @@
 # VagrantLaravelBox (dev)
 Vagrant script for an Ubuntu 18.04 (LTS) box with Laravel  
+  
 synched directory: /vagrant (synchronizes with 'vm-name' directory)  
 webserver-port: 8080  
-webroot: /vagrant/www-root
+webroot: /vagrant/www-root  
 SSH-port: 2222  
-SSH credentials: vagrant / vagrant
+SSH credentials: vagrant / vagrant  
 mysql: root / root  
 
 # Usage (on Ubuntu 18.04)
