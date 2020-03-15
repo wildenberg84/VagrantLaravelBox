@@ -17,7 +17,7 @@ sudo cat > /etc/nginx/sites-available/default <<- EOM
 server {
 	listen 80 default_server;
 	listen [::]:80 default_server ipv6only=on;
-	root /vagrant;
+	root /vagrant/www-root;
 	index index.php index.html index.htm;
 	server_name server_domain_or_IP;
 	location / {
